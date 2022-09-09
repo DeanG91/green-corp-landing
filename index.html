@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Солнечные батареи GreenCorp</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- шапка -->
     <header>
@@ -25,9 +28,77 @@
             <button>Узнать подробнее</button>
         </div>
         <div class="about__images">
-            <img class="about__sun-image" src="img/sun.png" alt="sun" >
-            <img class="about__image" src="img/solar-panel.png" alt="solar panel" >
+            <img class="about__sun-image" src="img/sun.png" alt="sun">
+            <img class="about__image" src="img/solar-panel.png" alt="solar panel">
         </div>
     </section>
+
+    <!-- часть секции Форма -->
+    <section class="form">
+        <div class="form__container">
+            <h1>Оставьте свои контакты</h1>
+            <p>Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата
+                денег.
+            </p>
+            <form>
+                <div class="form__group">
+                    <label for="name">Ваше имя</label>
+                    <input id="name" type="text" placeholder="Введите имя">
+                    <br>
+                    <label for="email">Электронная почта</label>
+                    <input id="email" type="" placeholder="***@yandex.ru">
+                    <br>
+                    <label for="phone">Номер телефона</label>
+                    <input id="phone" type="text" placeholder="7 (999) 999-99-99">
+                    <br>
+                    <label for="budget">Примерный бюджет</label>
+                    <select id="budget">
+                        <option>Выберите вариант</option>
+                        <option value="10-30">10 000 - 30 000</option>
+                        <option value="30-60">10 000 - 60 000</option>
+                        <option value="60-100">60 000 - 100 000</option>
+                        <option value="100+">100+</option>
+                    </select>
+                </div>
+                <button class="form__submit" type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="footer__container">
+
+            <div class="footer__group">
+                <h3>Позвонить нам:</h3>
+                <div class="footer__links">
+                    <a href="tel:74959999999">+7 (495) 999-99-99</a>
+                </div>
+            </div>
+
+            <div class="footer__group">
+                <h3>Решения для дома:</h3>
+                <div class="footer__links">
+                    <a href="#">Солнечные панели GreenRobotic</a> 
+                    <a href="#">Системы солнечных панелей GreenStation</a>
+                </div>
+            </div>
+
+            <div class="footer__group">
+                <h3>Компания</h3>
+                <div class="footer__links">
+                    <a href="#">Контакты</a> 
+                    <a href="#">Вакансии</a> 
+                    <a href="#">СМИ</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__copyright">
+            GreenCorp © 2021
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -79,3 +79,156 @@ button {
     width: 100px;
     height: 100px;
 }
+
+
+/* -------------------------------------------------------------------------- */
+/*                              стиль Анимация                                */
+/* -------------------------------------------------------------------------- */
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.about__sun-image {
+    position: absolute;
+    animation: rotation 10s infinite;
+    animation-timing-function: linear;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                СЕКЦИЯ ФОРМА                                */
+/* -------------------------------------------------------------------------- */
+
+.form__container {
+    width: 550px;
+    
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    background-color: #1D263A;
+    color: #fff;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    text-align: center;
+}
+
+.form h1 {
+    font-size: 48px;
+}
+
+.form p {
+    font-size: 18px;
+    opacity: 0.65;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form form {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+
+.form label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form input,
+.form select {
+    font-size: 18px;
+    color: #213053;
+    height: 60px;
+    padding: 0 20px 0px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+select {
+    appearance: none;
+}
+
+
+.form__submit {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #23a030;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+    margin-top: 40px;
+    padding: 15px;
+}
+
+.form__submit:hover {
+    background-color: #f6980c;
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: background-color 0.3s ease-in;
+}
+
+h3 {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 90px 20px 90px 20px;
+}
+
+footer h3{
+    opacity: 0.7;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__group {
+    margin-right: 80px;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+}
+
+.footer__links a{
+    margin-bottom: 15px;
+}
+
+.footer__copyright{
+    margin-top: 40px;
+    text-align: center;
+    opacity: 0.5;
+}
