@@ -113,6 +113,182 @@ button {
     animation-timing-function: linear;
 }
 
+
+/* -------------------------------------------------------------------------- */
+/*                                ВЕРХНИЙ БЛОК (Часть 1)                      */
+/* -------------------------------------------------------------------------- */
+
+.features {
+    background-color: #fff;
+    padding: 115px 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.card {
+    padding: 35px 40px 25px 40px;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+
+.card__logo {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    background: #eaeff9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__logo.red {
+    font-family: 'Raleway ExtraBold';
+    color: #ad1714;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           ВЕРХНИЙ БЛОК (Часть 2)                           */
+/* -------------------------------------------------------------------------- */
+
+.features__border {
+    width: 100%;
+    margin: 50px 0 50px 0;
+    border-top: 1px solid #E6EAF4;
+}
+
+.features__feedback {
+    display: flex;
+    padding-top: 50px;
+}
+
+.features__feedback-left {
+    margin-right: 95px;
+}
+
+.features__feedback-left h2 {
+    font-size: 48px;
+    font-family: 'Raleway ExtraBold', sans-serif;
+}
+
+.features__feedback-left p {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
+.features__feedback-right {
+    display: flex;
+}
+
+.features__box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 30px 40px 25px 40px;
+    color: white;
+}
+
+.features__box h3 {
+    font-family: 'Raleway ExtraBold', sans-serif;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.features__savings-box {
+    background-color: #dc5e26;
+    margin-right: 30px;
+    box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
+}
+
+.features__rate-box {
+    background-color: #1D263A;
+    box-shadow: 0px 6px 0 rgb(29 38 58 / 20%);
+}
+
+.stars {
+    color: #ff7039;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        Блок с изображением и кнопкой                       */
+/* -------------------------------------------------------------------------- */
+
+.promo {
+    display: flex;
+}
+
+.promo__image {
+    width: 50%;
+    flex-shrink: 0;
+    background-image: url("../img/promo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.promo__right {
+    background-color: #dd5f26;
+    padding: 160px 60px;
+}
+
+.promo__text {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.promo__text p {
+    opacity: 0.8;
+}
+
+.promo__text p::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ec6b29;
+    margin-right: 10px;
+}
+
+.promo__text button {
+    background-color: #107b1c;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+    padding: 15px 30px;
+}
+
+.promo__text button i{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.promo__btn {
+    display: flex;
+    justify-content: center;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                              БЛОК ФОРМЫ (FORM)                             */
 /* -------------------------------------------------------------------------- */
@@ -197,11 +373,7 @@ select {
     transition: background-color 0.3s ease-in;
 }
 
-h3 {
-    font-size: 16px;
-    opacity: 0.7;
-    margin-bottom: 30px;
-}
+
 
 
 
@@ -215,7 +387,7 @@ footer {
     padding: 90px 20px 90px 20px;
 }
 
-footer h3 {
+.footer__group h3 {
     opacity: 0.7;
     font-size: 16px;
     margin-bottom: 30px;
@@ -332,6 +504,52 @@ footer h3 {
         height: 75px;
     }
 
+    .cards {
+        grid-template-columns: auto;
+    }
+
+    .features {
+        background-color: #fff;
+        padding: 50px 10px;
+        grid-template-columns: auto;
+    }
+
+    .features__feedback {
+        flex-direction: column;
+    }
+
+    .features__feedback-left {
+        margin-right: 0;
+    }
+
+    .features__feedback-left h2,
+    .features__box h3 {
+        font-size: 36px;
+    }
+
+    .features__feedback-right {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .features__savings-box {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .promo {
+        flex-direction: column-reverse;
+    }
+
+    .promo__right {
+        padding: 50px 10px;
+    }
+
+    .promo__image {
+        width: 100%;
+        height: 500px;
+    }
+
     .form {
         padding: 50px 10px;
     }
@@ -360,6 +578,45 @@ footer h3 {
 
 .fa-angle-right {
     content: "\f105";
-    padding: 5px 0 2px 10px; /*внутренний отступ */
-    font-size: 14.5px; /* изменить размер иконки */
+    padding: 5px 0 2px 10px;
+    font-size: 14.5px;
+    /* изменить размер иконки */
+}
+
+.fa-solar-panel {
+    content: "\f5ba";
+    color: #ffb406;
+    /* font-size: 32px; */
+}
+
+.fa-chart-line-up {
+    content: "\f201";
+    color: #22a030;
+    /* font-size: 32px; */
+}
+
+.fa-chevron-right {
+    content: "\f054";
+    padding: 5px 0 2px 10px;
+    font-size: 14.5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Веб-шрифты                                 */
+/* -------------------------------------------------------------------------- */
+
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/webfonts/raleway_regular.woff2') format('woff2'),
+        url('/webfonts/raleway_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('../webfonts/raleway_extrabold.woff2') format('woff2'),
+        url('../webfonts/raleway_extrabold.woff') format('woff');
 }
