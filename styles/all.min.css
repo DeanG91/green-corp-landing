@@ -33563,7 +33563,7 @@ License - https://fontawesome.com/license (Commercial License) */
     font-style: normal;
     font-weight: 300;
     font-display: block;
-    src: url("/webfonts/fa-light-300.woff2") format("woff2"), url("/webfonts/fa-light-300.woff") format("woff"), url("/webfonts/fa-light-300.ttf") format("truetype");
+    src: url("../webfonts/fa-light-300.woff2") format("woff2"), url("../webfonts/fa-light-300.woff") format("woff"), url("../webfonts/fa-light-300.ttf") format("truetype");
 }
 
 .fal,
@@ -33577,7 +33577,7 @@ License - https://fontawesome.com/license (Commercial License) */
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url("/webfonts/fa-regular-400.woff2") format("woff2"), url("/webfonts/fa-regular-400.woff") format("woff"), url("/webfonts/fa-regular-400.ttf") format("truetype");
+    src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype");
 }
 
 .far,
@@ -33591,7 +33591,7 @@ License - https://fontawesome.com/license (Commercial License) */
     font-style: normal;
     font-weight: 900;
     font-display: block;
-    src: url("/webfonts/fa-solid-900.woff2") format("woff2"), url("/webfonts/fa-solid-900.woff") format("woff"), url("/webfonts/fa-solid-900.ttf") format("truetype");
+    src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype");
 }
 
 .fas,
@@ -33605,7 +33605,7 @@ License - https://fontawesome.com/license (Commercial License) */
     font-style: normal;
     font-weight: 100;
     font-display: block;
-    src: url("/webfonts/fa-thin-100.woff2") format("woff2"), url("/webfonts/fa-thin-100.woff") format("woff"), url("/webfonts/fa-thin-100.ttf") format("truetype");
+    src: url("../webfonts/fa-thin-100.woff2") format("woff2"), url("../webfonts/fa-thin-100.woff") format("woff"), url("../webfonts/fa-thin-100.ttf") format("truetype");
 }
 
 .fat,
