@@ -611,8 +611,6 @@ footer {
     font-family: 'Raleway';
     src: url('../webfonts/raleway_regular.woff2') format('woff2'),
         url('../webfonts/raleway_regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
