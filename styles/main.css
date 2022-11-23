@@ -60,11 +60,13 @@ button {
     background: url("../img/back.png") no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .about h1 {
     font-size: 70px;
     line-height: 76px;
+    font-family: 'Raleway ExtraBold', sans-serif;
 }
 
 .about p {
@@ -600,6 +602,21 @@ footer {
     padding: 5px 0 2px 10px;
     font-size: 14.5px;
 }
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Canvas                                   */
+/* -------------------------------------------------------------------------- */
+
+
+.orb-canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-width: 100%;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                 Веб-шрифты                                 */
