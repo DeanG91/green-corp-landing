@@ -13,11 +13,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
     top: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0);
     z-index: 1;
+
+    position: fixed;
+    background: none;
+    left: 0;
+    right: 0;
+    transition: box-shadow, background-color .25s ease;
 }
+
+.header__scrolled {
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}
+
 
 .header__logo {
     height: 30px;
@@ -56,7 +67,7 @@ button {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 115px;
-    padding-top: 115px;
+    padding-top: 200px;
     background: url("../img/back.png") no-repeat;
     background-position: center;
     background-size: cover;
@@ -121,6 +132,11 @@ button {
 /* -------------------------------------------------------------------------- */
 
 .features {
+    background-color: #fff;
+    padding: 115px 60px;
+}
+
+#features {
     background-color: #fff;
     padding: 115px 60px;
 }
@@ -281,7 +297,7 @@ button {
     padding: 15px 30px;
 }
 
-.promo__text button i{
+.promo__text button i {
     font-size: 15px;
     margin-left: 5px;
 }
@@ -289,6 +305,12 @@ button {
 .promo__btn {
     display: flex;
     justify-content: center;
+}
+
+.promo__btn button:hover{
+    background-color: #f6980c;
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: 0.5s all ease;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -573,9 +595,15 @@ footer {
 /*                             ИКОНКИ FONTAWESOME                             */
 /* -------------------------------------------------------------------------- */
 
-.btn {
+/* .more-button {
     display: flex;
     align-items: center;
+} */
+
+.more-button:hover {
+    background-color: #f6980c;
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: 0.5s all ease;
 }
 
 .fa-angle-right {
@@ -609,7 +637,7 @@ footer {
 /* -------------------------------------------------------------------------- */
 
 
-.orb-canvas{
+.orb-canvas {
     position: absolute;
     top: 0;
     right: 0;
