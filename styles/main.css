@@ -45,6 +45,11 @@ header a {
     margin-right: 25px;
 }
 
+.header__controls button:hover {
+    background-color: #f6980c;
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: 0.5s all ease;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                           БЛОК КОНТЕНТА (CONTENT)                          */
